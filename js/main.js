@@ -1,3 +1,5 @@
+/* 1st excersice
+
 var givenWord = "Mosaico";
 
 if(givenWord.length < 8){
@@ -5,3 +7,14 @@ if(givenWord.length < 8){
 } else {
     console.log("la palabra tiene mas de 8 letras");
 }
+*/
+
+/* 2nd excercise
+
+var word = "Mosaico";
+
+if(word.includes("ing")){
+    console.log("La palabra contiene ing");
+} else {
+    console.log("La palabra no contiene ing");
+}*/
