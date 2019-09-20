@@ -11,10 +11,23 @@ if(givenWord.length < 8){
 
 /* 2nd excercise
 
-var word = "Mosaico";
+var word = "ingeniero";
 
 if(word.includes("ing")){
     console.log("La palabra contiene ing");
 } else {
     console.log("La palabra no contiene ing");
 }*/
+
+//teniendo un numero 0 0contar hasta 100 y determinar cuales son los parseFloat
+
+
+var number = 0;
+
+while (number <= 100){
+    if(number % 2 === 0){
+        console.log("the number " + number + " is even")
+    }
+    number++;    
+}
+
