@@ -19,9 +19,11 @@ if(word.includes("ing")){
     console.log("La palabra no contiene ing");
 }*/
 
-//teniendo un numero 0 0contar hasta 100 y determinar cuales son los parseFloat
+/* 
+3rd excersice
 
-
+teniendo un numero 0 0contar hasta 100 y determinar cuales son los parseFloat
+ 
 var number = 0;
 
 while (number <= 100){
@@ -29,5 +31,14 @@ while (number <= 100){
         console.log("the number " + number + " is even")
     }
     number++;    
-}
+} */
 
+/* 4th excercise
+
+var pets = ["parrot", "cat", "bunny", "dog"]
+
+
+for (let counter = 0; counter <= pets.length; counter++){
+    console.log(pets[counter]);
+}
+*/
