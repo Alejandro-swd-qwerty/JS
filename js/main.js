@@ -20,3 +20,14 @@ var area = Pi * (radius*radius);
 
 console.log("El area del circulo es: " + area) */
 
+/*
+determinar par o no par
+
+var number = 10;
+
+if (number%2 === 0){
+    console.log("El numero es par");
+} else {
+    console.log("El numero no es par");
+}
+*/
