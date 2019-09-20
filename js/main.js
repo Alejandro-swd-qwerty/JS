@@ -42,3 +42,4 @@ for (let counter = 0; counter <= pets.length; counter++){
     console.log(pets[counter]);
 }
 */
+/*new line*/
