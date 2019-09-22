@@ -1,0 +1,6 @@
+{
+    "workbench.tree.indent": 4
+    "editor.tokenColorCustomizations": {
+        "comments": "#6fe28e";
+    }
+}
