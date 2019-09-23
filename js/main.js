@@ -120,11 +120,18 @@ var lastNames = ["Lopez Hernandez", "Navarro Osorio"];
 var fullNames = [];
 var personName = "";
 
-for (let index = 0; index < names.length; index++){
-    personName = names[index] + " " + lastNames[index];
-    fullNames[index] = personName;
-}
-    
-console.log (fullNames);
-*/
 
+joinName();
+
+
+
+function joinName(){
+
+    for (let index = 0; index < names.length; index++){
+     personName = names[index] + " " + lastNames[index];
+        fullNames[index] = personName;
+    }
+    
+    return fullNames;
+}
+*/
