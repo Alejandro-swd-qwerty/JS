@@ -44,6 +44,8 @@ const finder = (totalMatrix) => {
                 counter++;
             }
         }
+    
+    }
     return counter;
 }
 
