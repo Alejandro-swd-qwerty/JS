@@ -1,3 +1,6 @@
+/*
+//imprimir palabras que comiencen con a o A
+
 var array = ["alligator", "cat", "dog", "Alejandro"];
 
 var finder = array.forEach((element) => {
@@ -5,3 +8,9 @@ var finder = array.forEach((element) => {
     console.log(element);
     }
 })
+
+*/
+
+var phrase = "hola amigos";
+
+var phraseInverter = (phrase) => phrase.split(" ").reverse().join(" ")
