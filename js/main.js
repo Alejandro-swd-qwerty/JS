@@ -6,7 +6,7 @@ var words = ["casa", "perro", "bosque", "pradera"];
 var filtering = words.filter(word => (word.length % 2) === 0);
 
 */
-
+/*
 var arrayKoders;
 var objKoders = [
     {
@@ -27,14 +27,14 @@ var objKoders = [
 ]
 
 
-objKoders.map((name) => arrayKoders = `${name.firstName} ${name.lastName}`
+objKoders.map((name) => arrayKoders = `${name.firstName} ${name.lastName}`)
+
+*/
 
 
 
 
-
-
-var arrayKoders;
+var arrayKoders ;
 var objKoders = [
     {
         firstName: "Isaac",
@@ -45,26 +45,32 @@ var objKoders = [
     {
         firstName: "Jos",
         lastName: "Avalos",
-        generation: 4
+        generation: 1
         
     },
 
     {
         firstName: "Alex",
         lastName: "Aguilar",
-        generation: 1   
+        generation: 4   
     }
-]
+];
 
 
-const finder(generation, objKoders.map(name => {
-    arrayKoders = `${name.firstName} ${name.lastName}`
-    if(generation === name.generation){
-        return name;
-    } else {
-        return "No hay alumnos de esa generacion"
-    }
-}))
+function selection(generation, Koders = objKoders) {
+    
+    Koders.map(name => {
+        //arrayKoders = `${name.firstName} ${name.lastName}`;
+        //console.log(arrayKoders);
+        if(name.generation === generation){
+            console.log(`${name.firstName} ${name.lastName}`);
+        } /*else {
+            console.log("No hay alumnos de esa generacion")
+        }*/
+    })
+    return `${name.firstName} ${name.lastName}`;
+        
+}
 
 
 
