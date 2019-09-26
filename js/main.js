@@ -64,11 +64,11 @@ function selection(generation, Koders = objKoders) {
         //console.log(arrayKoders);
         if(name.generation === generation){
             console.log(`${name.firstName} ${name.lastName}`);
-        } /*else {
+        } else {
             console.log("No hay alumnos de esa generacion")
-        }*/
+        }
     })
-    return `${name.firstName} ${name.lastName}`;
+    //return `${name.firstName} ${name.lastName}`;
         
 }
 
