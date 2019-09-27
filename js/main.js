@@ -35,6 +35,7 @@ objKoders.map((name) => arrayKoders = `${name.firstName} ${name.lastName}`)
 
 
 var arrayKoders ;
+var generationFinder;
 var objKoders = [
     {
         firstName: "Isaac",
@@ -57,20 +58,87 @@ var objKoders = [
 ];
 
 
-function selection(generation, Koders = objKoders) {
+function selection(generation, koders = objKoders) {
     
-    Koders.map(name => {
-        //arrayKoders = `${name.firstName} ${name.lastName}`;
-        //console.log(arrayKoders);
-        if(name.generation === generation){
-            console.log(`${name.firstName} ${name.lastName}`);
+    koders.map(koder => {
+        arrayKoders = `${koder.firstName} ${koder.lastName}`;
+        console.log(arrayKoders);
+        generationFinder = koders.filter(koders.generation === generation);
+        console.log(generationFinder)
+    })    
+}
+
+
+        if(koder.generation == generation){
+            console.log(`${koder.firstName} ${koder.lastName}`);
         } else {
             console.log("No hay alumnos de esa generacion")
         }
     })
-    //return `${name.firstName} ${name.lastName}`;
+    //return `${koder.firstName} ${koder.lastName}`;
         
 }
 
 
 
+
+
+var car = 
+    {
+        brand: "Toyota",
+        model: "Yaris",
+        color: "Red",
+        year: 2019,
+        new: true,
+    }
+
+    for (const property in car) {
+        console.log(`${property} = ${car[property]}`);
+    }
+
+
+
+
+    var objKoders = [
+        {
+            firstName: "Isaac",
+            lastName: "Mendoza",
+            grade: 8,
+        },
+    
+        {
+            firstName: "Jos",
+            lastName: "Avalos",
+            grade: 5,  
+        },
+    
+        {
+            firstName: "Alex",
+            lastName: "Aguilar",
+            grade: 6,
+        }
+    ];
+
+    
+
+    function groupAverage() {
+        let gradeAddition = 0;
+        let totalStudents = objKoders.length;
+        let average;
+
+        objKoders.forEach(koder => {
+        gradeAddition += koder.grade;
+        average = gradeAddition/totalStudents;
+
+        })
+    return average
+    }
+
+
+    
+    
+
+
+
+
+    
