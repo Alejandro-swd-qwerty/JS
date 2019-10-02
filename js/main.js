@@ -169,7 +169,7 @@ var car =
     }
 
 */
-
+/*
 var style = [
     {
       height: '100px',
@@ -193,39 +193,21 @@ var style = [
     }
   ]
 
-var divArray = [];
-var divCollection = document.getElementsByTagName("div");
 
-for (let index = 0; index < divCollection.length; index++){
-    divArray.push(divCollection[index]);
+
+var colorize = (style) => {  
+    let divArray = [];
+    let divCollection = document.getElementsByTagName("div");
+
+    for (let index = 0; index < divCollection.length; index++){
+        divArray.push(divCollection[index]);
+    }
+
+    divArray.forEach((element, index) => {
+        let [firstStyle, secondStyle, thirdStyle, forthStyle] = style;
+        divArray[index].style.height = style[index].height;
+        divArray[index].style.width = style[index].width;
+        divArray[index].style.backgroundColor = style[index]. backgroundColor;
+    })
 }
-
-divArray.forEach((element, index) => {
-    let [firstStyle, secondStyle, thirdStyle, forthStyle] = style;
-    divArray[index].style.height = "100px";
-    divArray[index].style.width = "100px";
-    divArray[index].style.backgroundColor = "peru";
-})
-
-
-style.forEach((element, index) => {
-    
-} 
-)
-
-let [0:{backgroundColor}, 1:{backgroundColor}]
-
-let [1, 2] = style;
-console.log(`${1} ${2}`)
-
-
-
-
-document.getElementsByTagName("div")[0].style.height
-
-x[0].style.backgroundColor
-
-words.forEach(word => {
-    console.log(word);
-    
-    });
+*/
