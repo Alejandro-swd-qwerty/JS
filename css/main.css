@@ -8,3 +8,21 @@
 .active {
     background-color: blue important!;
 }
+
+#container{
+    display: flex;
+}
+
+.secDiv {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    justify-content: center;
+}
+
+.minDiv {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    justify-content: center;
+}

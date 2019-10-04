@@ -38,6 +38,8 @@ document.getElementById('add').addEventListener('click', () =>{
 })
 
 */
+
+/*
 var count = 0;
 
 var counter = window.setInterval(function() {
@@ -46,8 +48,63 @@ var counter = window.setInterval(function() {
     console.log(count);
 }, 1000)
 
+*/
 
 
+const stopwatch = (hours, minutes, seconds) => {
+  var CONTAINER_DIV = document.getElementbyId('container');
+
+  if (hours > 0 && hours <= 23){
+    //hoursCounter(hours);
+  }
+  if (minutes > 0 && minutes <= 59){
+    minDiv = document.createElement('div').classList.add('minDiv');
+    CONTAINER_DIV.appendChild(minDiv)    
+    minutesCounter(minutes);
+  }
+  if (seconds > 0 && seconds <= 59){
+    secondsCounter(seconds);
+  }else if (seconds === 0){
+    minutes--;
+  }
+}
+
+const minutesCounter = (minutes) => {
+  var minCounter = 0;
+  let minInterval = window.setInterval(function() {
+    minCounter = minutes--;
+    if (minCounter > 0){
+      document.getElementById('container').innerText = minCounter;
+      console.log(minCounter);
+      return minCounter;
+    } else if (minCounter === 0) {
+      window.clearInterval(minInterval)
+    }
+    
+
+  }, 60000)
+}
+
+
+
+
+
+const secondsCounter = (seconds) => { 
+  let secCounter= 0;
+  let secInterval = window.setInterval(function() {
+    secCounter = seconds--;
+    if (secCounter>= 0){
+      document.getElementById('container').innerText = secCounter;
+      console.log(secCounter);
+      return secCounter;
+    } else {
+      clearInterval(secInterval)
+    }
+    
+  }, 1000)
+}
+
+const stop = () => clearInterval(secInterval)
 
 
 
