@@ -1,0 +1,10 @@
+.test {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+}
+
+.active {
+    background-color: blue important!;
+}
