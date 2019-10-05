@@ -34,7 +34,7 @@ xhttp.onreadystatechange = function() {
         //console.log(objRes[i])
         handlerResponse(objRes[i]);
         console.log(card)
-        document.getElementById("container").innerHTML += card
+        document.getElementById("wall").innerHTML += card
       }
   }
 }
@@ -44,22 +44,9 @@ xhttp.open("GET", "https://ajaxkode.firebaseio.com/posts.json");
 xhttp.send();
 
 
-
-
-
-
-
 const handlerResponse = (response) => {
-  /*console.log(response)
-  var parent = document.getElementById('container')
-  response.forEach(({ element, text }) => {
-    let node = document.createElement(element)
-    node.innerText = text
-    parent.appendChild(node)
-  });*/
 
-  //console.log(response);
-  card = `<div class="card" style="width: 18rem;">
+  card = `<div class="card col-lg-6 col-12 justify-content-center">
   <img class="card-img-top" src=${response.img} alt="Card image cap">
   <div class="card-body">
   <h5 class="card-title">${response.title}</h5>
@@ -67,33 +54,4 @@ const handlerResponse = (response) => {
   </div>
   </div>`
   return card;
-
 }
-
-
-
-
-//var collection = JSON.parse(post);
-//var collection = [];
-//collection.push(post);
-//console.log(collection);
-//console.log(post);
-
-
-
-
-var posts = {
-  title: "Good Morning",
-  description: "yellow flower",
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwdBhTY9XD_KJgfJDHAcvcWSA0FBWzNnPhGo9Xr-VD6UewAYfNQw",
-  author: "Areli S."
-}
-
-
-document.getElementById("container").innerHTML = `<div class="card" style="width: 18rem;">
-<img class="card-img-top" src=${posts.img} alt="Card image cap">
-<div class="card-body">
-  <h5 class="card-title">${posts.title}</h5>
-  <p class="card-text">${posts.description}</p>
-</div>
-</div>`
