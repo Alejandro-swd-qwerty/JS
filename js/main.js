@@ -46,7 +46,7 @@ xhttp.send();
 
 const handlerResponse = (response) => {
 
-  card = `<div class="card col-lg-6 col-12 justify-content-center">
+  card = `<div class="card col-lg-6 col-md-6 col-12 justify-content-center">
   <img class="card-img-top" src=${response.img} alt="Card image cap">
   <div class="card-body">
   <h5 class="card-title">${response.title}</h5>
